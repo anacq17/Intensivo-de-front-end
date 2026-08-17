@@ -1,112 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Construção do Hip Hop</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<header>
+    <h1>Exercícios de Formulários HTML</h1>
+    <p>Formulários de cadastro, login, dados pessoais e pesquisa.</p>
+</header>
 
-<body>
+<nav>
+    <ul>
+        <li><a href="#cadastro">Cadastro</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#pessoal">Dados Pessoais</a></li>
+        <li><a href="#pesquisa">Pesquisa</a></li>
+    </ul>
+</nav>
 
-    <header>
-        <h1>A Construção do Hip Hop na Indústria Musical</h1>
-        <p>Kendrick Lamar como destaque da nova geração do rap.</p>
-    </header>
+<main>
 
-    <nav>
+    <article>
+
+        <section id="cadastro">
+            <h2>Formulário de Cadastro</h2>
+
+            <form>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha"
+                    pattern=".{8,}"
+                    title="A senha deve ter pelo menos 8 caracteres"
+                    required>
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+        </section>
+
+
+        <section id="login">
+            <h2>Formulário de Login</h2>
+
+            <form class="login-form">
+
+                <label for="login-email">E-mail:</label>
+                <input type="email" id="login-email" name="login-email" required>
+
+                <label for="login-senha">Senha:</label>
+                <input type="password" id="login-senha" name="login-senha" required>
+
+                <button type="submit">Entrar</button>
+
+            </form>
+        </section>
+
+
+        <section id="pessoal">
+            <h2>Informações Pessoais e Endereço</h2>
+
+            <form>
+
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+
+                    <label for="nome-completo">Nome completo:</label>
+                    <input type="text" id="nome-completo" name="nome-completo" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento">
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <label for="rua">Rua:</label>
+                    <input type="text" id="rua" name="rua">
+
+                    <label for="numero">Número:</label>
+                    <input type="number" id="numero" name="numero">
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade">
+
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado">
+
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep">
+                </fieldset>
+
+                <button type="submit">Salvar informações</button>
+
+            </form>
+        </section>
+
+
+        <section id="pesquisa">
+            <h2>Formulário de Pesquisa</h2>
+
+            <form>
+
+                <label for="nome-pesquisa">Nome:</label>
+                <input type="text" id="nome-pesquisa" name="nome-pesquisa">
+
+                <label for="opiniao">O que você achou da página?</label>
+
+                <select id="opiniao" name="opiniao">
+                    <option value="">Selecione uma opção</option>
+                    <option value="otimo">Ótimo</option>
+                    <option value="bom">Bom</option>
+                    <option value="regular">Regular</option>
+                    <option value="ruim">Ruim</option>
+                </select>
+
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="5"></textarea>
+
+                <button class="botao-pesquisa" type="submit">
+                    Enviar pesquisa
+                </button>
+
+            </form>
+        </section>
+
+    </article>
+
+
+    <aside>
+
+        <h2>Exercícios</h2>
+
         <ul>
-            <li><a href="#historia">História</a></li>
-            <li><a href="#kendrick">Kendrick Lamar</a></li>
-            <li><a href="#influencia">Influência</a></li>
-            <li><a href="#curiosidades">Curiosidades</a></li>
+            <li>Cadastro de usuário</li>
+            <li>Login responsivo</li>
+            <li>Informações pessoais</li>
+            <li>Endereço</li>
+            <li>Pesquisa de opinião</li>
         </ul>
-    </nav>
 
-    <main>
+    </aside>
 
-        <article>
+</main>
 
-            <section id="historia">
-                <h2>Origem do Hip Hop</h2>
-                <p> O Hip Hop surgiu na década de 1970, no bairro do Bronx, em Nova York, Estados Unidos. O movimento
-                    nasceu como uma forma de expressão para jovens que buscavam mostrar sua realidade por meio da
-                    música, da dança, da arte e da cultura. </p>
 
-                <p> Com o tempo, o Hip Hop passou a ser conhecido em vários países e se tornou um dos estilos musicais
-                    mais populares do mundo. Além do rap, o movimento também é formado pelo DJ, pelo breakdance e pelo
-                    grafite, que representam diferentes formas de expressão artística. </p>
-
-                <p> Atualmente, o Hip Hop influencia a música, a moda e a cultura em geral. Muitos artistas utilizam
-                    suas letras para falar sobre temas sociais, desigualdade, racismo, educação e experiências de vida,
-                    mostrando que esse movimento vai muito além do entretenimento. </p>
-            </section>
-
-            <section id="kendrick">
-                <h2>Kendrick Lamar</h2>
-
-                <p>
-                    Kendrick Lamar é um rapper norte-americano conhecido por
-                    escrever músicas que falam sobre racismo, desigualdade,
-                    superação e a realidade vivida por muitas pessoas.
-                    Seu trabalho é considerado um dos mais importantes do rap atual.
-                </p>
-
-                <figure>
-                    <img src="./kendrick-lamar-grammy-2025.webp" alt="Kendrick Lamar">
-
-                    <figcaption>
-                        Kendrick Lamar ganhando um Grammy de melhor álbum de rap.
-                    </figcaption>
-                </figure>
-
-            </section>
-
-            <section id="influencia">
-                <h2>Influência na Indústria Musical</h2>
-
-                <p>
-                    O sucesso de Kendrick Lamar mostrou que o rap também pode
-                    transmitir mensagens importantes e conquistar reconhecimento
-                    internacional. Seu trabalho inspirou novos artistas e ajudou
-                    a fortalecer ainda mais o Hip Hop na música.
-                </p>
-
-                <p>
-                    "Sempre fui muito aberto sobre contar histórias em todo o meu
-                    catálogo e minha história da música, e sempre tive uma paixão
-                    em trazer isso para qualquer palco em que eu esteja. Gosto de
-                    sempre levar adiante essa sensação de fazer as pessoas ouvirem,
-                    mas também verem e pensarem um pouco." — Kendrick Lamar.
-                </p>
-            </section>
-
-        </article>
-
-        <aside id="curiosidades">
-
-            <h2>Curiosidades</h2>
-
-            <ul>
-                <li>Nasceu em Compton, Califórnia.</li>
-                <li>Seu último album (GNX), o carro em que ele se escora carrega um peso
-                    emocional da sua história de vida. Sendo o mesmo modelo no qual seu pai o
-                    levou para casa do hospital quando ele nasceu.</li>
-                <li>Recebeu o Prêmio Pulitzer pela obra DAMN.</li>
-                <li>É considerado um dos maiores rappers da atualidade.</li>
-                <li>K.dot foi o primeiro nome artístico quando lançou seus primeiros
-                    mixtapes na adolescência</li>
-            </ul>
-
-        </aside>
-
-    </main>
-
-    <footer>
-        <p>Atividade de HTML Semântico - Desenvolvimento de Sistemas</p>
-    </footer>
-
-</body>
-
-</html>
+<footer>
+    <p>Atividade de Formulários HTML - Desenvolvimento de Sistemas</p>
+</footer>
